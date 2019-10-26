@@ -1,11 +1,14 @@
 # require modules here
-def load_library(filename)
+def load_library
+  #create hash with two keys :get_meaning and :get_emoticon
   name={}
   name[:get_meaning]={}
   name[:get_emoticon]={}
+  #load_file and save to result
   require "yaml"
   result=YAML.load_file(filename)
- 
+  
+  #create two hash and an array and populate them
   hash_1={}
   hash_2={}
   keys=[]
@@ -14,7 +17,7 @@ def load_library(filename)
     hash_2[v[0]]={}
     keys << k
   end
-
+  #populate the values of the :get_meaning and :get_emoticon keys
   name[:get_meaning]=hash_1
   name[:get_emoticon]=hash_2
   
