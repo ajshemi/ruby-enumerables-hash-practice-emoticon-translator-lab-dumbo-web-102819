@@ -28,7 +28,6 @@ def load_library
   i+=1
   end
   
-  
   keys_1=name[:get_meaning].keys
   # the emoticon keys inside the 'get_emoticon' hash point to their Japanese equivalent
   j=0
