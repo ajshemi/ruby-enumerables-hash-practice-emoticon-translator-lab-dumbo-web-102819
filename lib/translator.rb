@@ -4,7 +4,7 @@ def load_library(filename)
   name=YAML.load_file(filename)
  
   hash_1={}
-  name.map do |k,v|
+  name.each do |k,v|
     hash_1[v[1]]={}
   end
   name[:get_meaning]={}
