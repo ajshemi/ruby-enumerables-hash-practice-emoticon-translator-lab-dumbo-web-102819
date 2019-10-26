@@ -9,6 +9,7 @@ def load_library(filename)
     hash_1[v[1]]={}
   end
   name[:get_meaning]=hash_1
+  name
   
   
 end
