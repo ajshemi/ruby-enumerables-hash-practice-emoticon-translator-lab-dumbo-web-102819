@@ -8,8 +8,8 @@ def load_library(filename)
   end
 
   name[:get_meaning]={}
+  name[:get_emoticon]={}
   name[:get_emoticon]=hash_1
-  name
   
   
 end
