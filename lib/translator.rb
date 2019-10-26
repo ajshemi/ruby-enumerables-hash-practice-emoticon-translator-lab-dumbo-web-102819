@@ -8,7 +8,7 @@ def load_library(filename)
   name.map do |k,v|
     hash_1[v[1]]={}
   end
-  name[:get_emoticon]=hash_1
+  name[:get_meaning]=hash_1
   
   
 end
