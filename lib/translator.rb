@@ -1,14 +1,17 @@
 # require modules here
 def load_library(filename)
-  require "yaml"
-  name=YAML.load_file(filename)
- 
-  hash_1={}
-  name.each do |k,v|
-    hash_1[v[1]]={}
-  end
+  name={}
   name[:get_meaning]={}
   name[:get_emoticon]={}
+  require "yaml"
+  result=YAML.load_file(filename)
+ 
+  hash_1={}
+  hash_2={}
+  result.each do |k,v|
+    hash_1[v[1]]={}
+    hash_2[v[0]]={}
+  end
   
   name[:get_meaning]=hash_1
   name
