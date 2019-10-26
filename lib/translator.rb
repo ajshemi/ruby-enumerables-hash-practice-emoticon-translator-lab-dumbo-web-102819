@@ -12,8 +12,14 @@ def load_library(filename)
     hash_1[v[1]]={}
     hash_2[v[0]]={}
   end
-  
+
+
   name[:get_meaning]=hash_1
+  
+  hash_1[:get_meaning].map do |k|
+  hash_1[:get_meaning][k[0]]=keys[i]
+  i+=1
+  end
   name
   
   
