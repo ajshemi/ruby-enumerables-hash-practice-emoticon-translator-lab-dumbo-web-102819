@@ -12,7 +12,7 @@ def load_library(filename)
   result.each do |k,v|
     hash_1[v[1]]={}
     hash_2[v[0]]={}
-    keys <<
+    keys << k
   end
 
 
