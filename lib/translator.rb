@@ -3,13 +3,15 @@ def load_library(filename)
   require "yaml"
   name=YAML.load_file(filename)
   # code goes here
-  emoticons = ["☜(⌒▽⌒)☞", "(ΘεΘ;)", "(￣ー￣)", "o_O", "(^_-)"]
-  emoticons = ["☜(⌒▽⌒)☞", "(ΘεΘ;)", "(￣ー￣)", "o_O", "(^_-)"]
+  hash_1={}
+  name.map do |k,v|
+    hash_1[v[1]]={}
+  end
+
   new_hash={}
-  
   new_hash[:get_meaning]={}
-  new_hash[:get_emoticon]={}
-  print name
+  new_hash[:get_emoticon]=hash_1
+  
   
 end
 
