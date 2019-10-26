@@ -21,23 +21,22 @@ def load_library
   name[:get_meaning]=hash_1
   name[:get_emoticon]=hash_2
   
-  
+  # the emoticon keys inside the 'get_meaning' hash point to their meanings
   i=0
   name[:get_meaning].map do |k|
     name[:get_meaning][k[0]]=keys[i]
   i+=1
   end
   
-  keys_1=name[:get_meaning].keys
   
+  keys_1=name[:get_meaning].keys
+  # the emoticon keys inside the 'get_emoticon' hash point to their Japanese equivalent
   j=0
   name[:get_emoticon].map do |k|
     name[:get_emoticon][k[0]]=keys_1[j]
   j+=1
   end
   name
-  
-  
 end
 
 def get_japanese_emoticon
