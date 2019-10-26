@@ -4,12 +4,10 @@ def load_library(filename)
   name=YAML.load_file(filename)
   name[:get_meaning]={}
   name[:get_emoticon]={}
+  hash_1={}
   name.map do |k,v|
     hash_1[v[1]]={}
   end
-
-  name[:get_meaning]={}
-  name[:get_emoticon]={}
   name[:get_emoticon]=hash_1
   
   
