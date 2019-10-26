@@ -2,7 +2,6 @@
 def load_library(filename)
   require "yaml"
   name=YAML.load_file(filename)
-  # code goes here
   hash_1={}
   name.map do |k,v|
     hash_1[v[1]]={}
