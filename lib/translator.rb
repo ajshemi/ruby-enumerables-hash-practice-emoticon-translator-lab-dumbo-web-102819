@@ -17,9 +17,9 @@ def load_library(filename)
 
 
   name[:get_meaning]=hash_1
-  
+  i=0
   name[:get_meaning].map do |k|
-  name[:get_meaning][k[0]]=keys[i]
+    name[:get_meaning][k[0]]=keys[i]
   i+=1
   end
   name
