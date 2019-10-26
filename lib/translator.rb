@@ -8,9 +8,9 @@ def load_library(filename)
     hash_1[v[1]]={}
   end
 
-  new_hash={}
-  new_hash[:get_meaning]={}
-  new_hash[:get_emoticon]=hash_1
+  name[:get_meaning]={}
+  name[:get_emoticon]=hash_1
+  name
   
   
 end
