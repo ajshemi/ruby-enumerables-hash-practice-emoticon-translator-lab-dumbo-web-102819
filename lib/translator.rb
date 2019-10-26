@@ -24,10 +24,11 @@ def load_library(filename)
   i+=1
   
   keys_1=name[:get_meaning].keys
-  i=0
+  
+  j=0
   name[:get_emoticon].map do |k|
-    name[:get_emoticon][k[0]]=keys_1[i]
-  i+=1
+    name[:get_emoticon][k[0]]=keys_1[j]
+  j+=1
   end
   name
   
